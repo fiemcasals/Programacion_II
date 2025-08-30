@@ -10,10 +10,7 @@
 # - datos biológicos
 # - datos académicos
 
-# Incluir herencia, polimorfismo, property, strategy, factory, typing
 
-# usamos property para los atributos de las clases (aún no implementado acá)
-# usamos strategy para el modoSaludo (aún no implementado acá)
 
 class DatosBiologicos:
     def __init__(self, altura: int, sexo: str):

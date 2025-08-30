@@ -15,6 +15,7 @@
 # usamos property para los atributos de las clases
 # usamos strategy para el modoSaludo
 
+
 class DatosBiologicos:
     def __init__(self, altura: int, sexo: str):
         self.altura = altura
@@ -86,7 +87,7 @@ class ConstructorPersona:
         return Persona(altura, sexo, booleano, nivelAcademicoAlcanzado, name, cls.registroModoSaludo[tipoSaludo]())
     
 # -----------------------------
-# Ejemplo de uso
+# Ejemplos de uso
 # -----------------------------
 
 persona1 = ConstructorPersona.crear(1.85, "hombre", True, "universitario", "Gaston Chico", "formal")
