@@ -97,13 +97,13 @@ class ConstructorPersona:
 
 persona1 = ConstructorPersona.crear(1.85, "hombre", True, "universitario", "Gaston Chico", "formal")
 print(persona1)
-persona2 = ConstructorPersona.crear(1.60, "mujer", True, "secundario", "Juana Perez", "informal")
+persona2 = ConstructorPersona.crear(1.60, "mujer", True, "secundario", "Violencia Rivas", "informal")
 print(persona2)
 persona3 = ConstructorPersona.crear(1.75, "hombre", True, "postgrado", "Sidharta Kiwi", "informal")
 print(persona3)
 persona4 = ConstructorPersona.crear(1.90, "hombre", False, "secundario", "Jorge Suspenso", "formal")
 print(persona4)
-persona5 = ConstructorPersona.crear(1.80, "otro", True, "secundario", "Carolo Casini", "informal")
+persona5 = ConstructorPersona.crear(1.80, "otro", True, "secundario", "Micky Vainilla", "informal")
 print(persona5)
 
 
