@@ -52,7 +52,7 @@ class ConstructorPersona:
 persona1 = ConstructorPersona.crear(1.85, "hombre", True, "universitario", "Gaston Chico", "formal")
 print(persona1)
 
-persona2 = ConstructorPersona.crear(1.60, "mujer", False, "secundario", "Juana Perez", "informal")
+persona2 = ConstructorPersona.crear(1.60, "mujer", True, "secundario", "Juana Perez", "informal")
 print(persona2)
 
 persona3 = ConstructorPersona.crear(1.75, "hombre", True, "terciario", "Sidharta Kiwi", "informal")
