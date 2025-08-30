@@ -12,7 +12,7 @@ class Persona:
         self.nombre = nombre
         self.saludo = FormaDeSaludo   # objeto que implementa ComportamientoSaludo
     
-    def saludar(self) -> str:
+    def saludarPersona(self) -> str:
         return self.saludo.saludar()  # devolver el string
 
 
@@ -63,5 +63,5 @@ if __name__ == "__main__":
     ]
 
     for persona in personas:
-        print(f"{persona.nombre} dice: {persona.saludar()}")
+        print(f"{persona.nombre} dice: {persona.saludarPersona()}")
         print("---")
