@@ -10,6 +10,11 @@
 # - datos biológicos
 # - datos académicos
 
+# Incluir herencia, polimorfismo, property, strategy, factory, typing
+
+# usamos property para los atributos de las clases (aún no implementado acá)
+# usamos strategy para el modoSaludo (aún no implementado acá)
+
 class DatosBiologicos:
     def __init__(self, altura: int, sexo: str):
         self.altura = altura
@@ -28,7 +33,7 @@ class SaludoInformal:
     def saludar(self):
         return f"Hola"
 class Persona(DatosBiologicos, AcademicosDatos):
-    def __init__(self, altura, sexo, secundarioCompleto: bool, nivel: str, name: str, formaSaludo: MetodoSaludo):
+    def __init__(self, altura: float, sexo, secundarioCompleto: bool, nivel: str, name: str, formaSaludo: MetodoSaludo):
         DatosBiologicos.__init__(self, altura, sexo)
         AcademicosDatos.__init__(self, secundarioCompleto, nivel)
        
@@ -44,7 +49,7 @@ class ConstructorPersona:
         "informal" : SaludoInformal
     }
     @classmethod
-    def crear(cls, altura, sexo: str, booleano: bool, nivelAcademicoAlcanzado: str, name: str, tipoSaludo: str) -> Persona:
+    def crear(cls, altura: float, sexo: str, booleano: bool, nivelAcademicoAlcanzado: str, name: str, tipoSaludo: str) -> Persona:
         return Persona(altura, sexo, booleano, nivelAcademicoAlcanzado, name, cls.registroModoSaludo[tipoSaludo]()) 
 # -----------------------------
 # Ejemplo de uso
@@ -57,4 +62,10 @@ print(persona2)
 
 persona3 = ConstructorPersona.crear(1.75, "hombre", True, "terciario", "Sidharta Kiwi", "informal")
 print(persona3)
+
+persona4 = ConstructorPersona.crear(1.90, "hombre", False, "ninguno", "Homero Simpson", "formal")
+print(persona4)
+
+persona5 = ConstructorPersona.crear(1.80, "no binarie", True, "secundario", "Carolo Casini", "informal")
+print(persona5)
 
