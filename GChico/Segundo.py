@@ -14,6 +14,11 @@
 
 # usamos property para los atributos de las clases
 # usamos strategy para el modoSaludo
+# usamos factory para poder variar la strategy
+# usamos typing para los tipos de datos
+# usamos herencia multiple para que persona herede de biologicos y academicos
+# usamos polimorfismo para que las clases de saludo tengan el mismo método saludar
+# usamos ValueError para validar los datos de entrada
 
 
 class DatosBiologicos:
