@@ -10,8 +10,6 @@
 # - datos biológicos
 # - datos académicos
 
-# usamos strategy para el modoSaludo (aún no implementado acá)
-# usamos factory para poder variar la strategy (aún no implementado acá)
 class DatosBiologicos:
     def __init__(self, altura: int, sexo: str):
         self.altura = altura
@@ -51,5 +49,12 @@ class ConstructorPersona:
 # -----------------------------
 # Ejemplo de uso
 # -----------------------------
-persona1 = ConstructorPersona.crear(1.85, "hombre", True, "universitario", "Gaston", "formal")
+persona1 = ConstructorPersona.crear(1.85, "hombre", True, "universitario", "Gaston Chico", "formal")
 print(persona1)
+
+persona2 = ConstructorPersona.crear(1.60, "mujer", False, "secundario", "Juana Perez", "informal")
+print(persona2)
+
+persona3 = ConstructorPersona.crear(1.75, "hombre", True, "terciario", "Sidharta Kiwi", "informal")
+print(persona3)
+
