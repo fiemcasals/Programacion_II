@@ -79,7 +79,7 @@ class Persona(DatosBiologicos, AcademicosDatos):
         self.saludo = formaSaludo  
     def __str__(self):
         return (
-            f"Buenos días, mi nombre es {self.nombre}, mi altura es {self.altura}, soy {self.sexo},terminé el secundario: {self.secundarioCompleto}, y mi nivel académico alcanzado es {self.nivelAlcanzado}, {self.saludo.saludar()}"
+            f"{self.saludo.saludar()}, buenos días, mi nombre es {self.nombre}, mi altura es {self.altura}, soy {self.sexo},terminé el secundario: {self.secundarioCompleto}, y mi nivel académico alcanzado es {self.nivelAlcanzado}. Adios!"
         )
     
 class ConstructorPersona:
