@@ -105,6 +105,13 @@ persona4 = ConstructorPersona.crear(1.90, "hombre", False, "secundario", "Jorge 
 print(persona4)
 persona5 = ConstructorPersona.crear(1.80, "otro", True, "secundario", "Micky Vainilla", "informal")
 print(persona5)
+persona6 = ConstructorPersona.crear(1.70, "mujer", True, "universitario", "La Loca de Mierda", "formal")
+print(persona6)
+persona7 = ConstructorPersona.crear(1.78, "hombre", True, "secundario", "Juan Carlos Pelotudo", "informal")
+print(persona7)
+
+
+
 
 
 
